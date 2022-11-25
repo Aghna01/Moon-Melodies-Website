@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="uf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <title> Moon Melodies </title>
+    <link href="main.css" rel="stylesheet" type="text/css" media="screen" />
+    <link rel="shortcut icon" href="musicnote.png" type="image/x-icon">
+
+
+</head>
+
+<body>
+
+    <h2>Moon&nbspMelodies</h2>
+    <h4>- [Click on a moon for a melody] -</h4>
+
+    <div class="default">
+
+        <a onclick="myAudioFunction('no1')">
+            <img src="moon.png" class="no1">
+        </a>
+
+        <a onclick="myAudioFunction('no2')">
+            <img src="moon.png" class="no2">
+        </a>
+
+        <a onclick="myAudioFunction('no3')">
+            <img src="moon.png" class="no3">
+        </a>
+
+        <a onclick="myAudioFunction('no4')">
+            <img src="moon.png" class="no4">
+        </a>
+
+        <a onclick="myAudioFunction('no5')">
+            <img src="moon.png" class="no5">
+        </a>
+
+    </div>
+
+
+
+    <script>
+
+        var Audio1 = new Audio('audio 1.mp3')
+        var Audio2 = new Audio('audio 2.mp3')
+        var Audio3 = new Audio('audio 3.mp3')
+        var Audio4 = new Audio('audio 4.mp3')
+        var Audio5 = new Audio('audio 5.mp3')
+
+
+        function myAudioFunction(img) {
+
+            if (img == 'no1') {
+                Audio1.play();
+            }
+            else if (img == 'no2') {
+                Audio2.play();
+            }
+            else if (img == 'no3') {
+                Audio3.play();
+            }
+            else if (img == 'no4') {
+                Audio4.play();
+            }
+            else if (img == 'no5') {
+                Audio5.play();
+            }
+
+        }
+        
+    </script>
+
+
+    <footer>
+        <p>© 2022 Aghna Wasim. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
